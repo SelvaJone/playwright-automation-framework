@@ -1,0 +1,36 @@
+[
+{
+    "firstname": "Selva",
+    "lastname": "Automation",
+    "totalprice": 300,
+    "depositpaid": true,
+    "bookingdates": {
+        "checkin": "2026-10-01",
+        "checkout": "2026-10-10"
+    },
+    "additionalneeds": "Breakfast"
+},
+ {
+        "firstname": "John",
+        "lastname": "QA",
+        "totalprice": 500,
+        "depositpaid": false,
+        "bookingdates": {
+            "checkin": "2026-11-01",
+            "checkout": "2026-11-15"
+        },
+        "additionalneeds": "Lunch"
+    },
+    {
+        "firstname": "David",
+        "lastname": "Tester",
+        "totalprice": 700,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2026-12-01",
+            "checkout": "2026-12-15"
+        },
+        "additionalneeds": "Dinner"
+    }
+]
+
