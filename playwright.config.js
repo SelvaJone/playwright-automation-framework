@@ -53,7 +53,8 @@ export default defineConfig({
     // API project
         {
             name: "api",
-            testMatch: "**/api-fixture/**/*.spec.js"
+            testMatch: "**/api-fixture/**/*.spec.js",
+          timeout: 30000
         },
 
     /* Test against mobile viewports. */
