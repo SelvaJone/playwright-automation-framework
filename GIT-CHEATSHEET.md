@@ -1148,3 +1148,91 @@ Typical workflow:
 5. Create a Pull Request
 6. Review and approve
 7. Merge into master
+## Unstage a Staged File
+
+If you accidentally stage a file and want to **remove it from staging without deleting the file**:
+
+```powershell
+git restore --staged <filename>
+```
+
+Example:
+
+```powershell
+git restore --staged GIT-CHEATSHEET.md
+```
+
+To unstage **all staged files**:
+
+```powershell
+git restore --staged .
+```
+
+---
+
+## Delete a Tracked File
+
+To delete a file from your working directory **and stage the deletion**:
+
+```powershell
+git rm <filename>
+```
+
+Example:
+
+```powershell
+git rm old-file.md
+```
+
+For a directory:
+
+```powershell
+git rm -r <directory-name>
+```
+
+If you want to stop tracking a file but **keep it on your computer**:
+
+```powershell
+git rm --cached <filename>
+```
+
+---
+
+## Prune Deleted Remote Branches
+
+When a remote branch has been deleted from GitHub, your local Git may still show it under `remotes/origin/...`.
+
+Use:
+
+```powershell
+git fetch --prune
+```
+
+This refreshes the remote information and removes stale remote-tracking branches.
+
+Example:
+
+```text
+Before:
+remotes/origin/feature/pr-practice
+
+GitHub branch was deleted
+
+git fetch --prune
+
+After:
+remotes/origin/feature/pr-practice   ← removed
+```
+
+---
+
+## Quick Difference
+
+| Command                     | Purpose                                |
+| --------------------------- | -------------------------------------- |
+| `git restore --staged file` | Unstage a file but keep it             |
+| `git restore --staged .`    | Unstage all files                      |
+| `git rm file`               | Delete file and stage deletion         |
+| `git rm -r folder`          | Delete directory and stage deletion    |
+| `git rm --cached file`      | Stop tracking file but keep it locally |
+| `git fetch --prune`         | Remove stale remote-tracking branches  |
