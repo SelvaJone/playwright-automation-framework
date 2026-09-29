@@ -1130,3 +1130,9 @@ git push
 ```
 
 **Always check `git status` before and after important Git operations.**
+## Branches
+
+- `git branch` — List local branches
+- `git branch <branch-name>` — Create a branch
+- `git switch <branch-name>` — Switch to a branch
+- `git switch -c <branch-name>` — Create and switch to a new branch
