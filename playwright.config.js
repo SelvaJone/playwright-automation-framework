@@ -54,7 +54,7 @@ export default defineConfig({
         {
             name: "api",
             testMatch: "**/api-fixture/**/*.spec.js"
-        }
+        },
 
     /* Test against mobile viewports. */
     // {
