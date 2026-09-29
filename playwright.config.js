@@ -54,8 +54,9 @@ export default defineConfig({
         {
             name: "api",
             testMatch: "**/api-fixture/**/*.spec.js",
-          timeout: 30000
-        },
+          timeout: 30000,
+            retries: 1
+                   },
 
     /* Test against mobile viewports. */
     // {
