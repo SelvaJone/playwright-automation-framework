@@ -1136,3 +1136,15 @@ git push
 - `git branch <branch-name>` — Create a branch
 - `git switch <branch-name>` — Switch to a branch
 - `git switch -c <branch-name>` — Create and switch to a new branch
+## Pull Request
+
+A Pull Request is a request to merge changes from one branch into another branch.
+
+Typical workflow:
+1. Create a feature branch
+2. Make changes
+3. Commit changes
+4. Push the branch to GitHub
+5. Create a Pull Request
+6. Review and approve
+7. Merge into master
